@@ -20,4 +20,8 @@
     <ProjectReference Include="..\Testing\Testing_Lab1.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\github-actions-demo.yml" />
+  </ItemGroup>
+
 </Project>
