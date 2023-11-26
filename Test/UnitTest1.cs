@@ -68,7 +68,7 @@ namespace Test
             Exception ex = Assert.Throws<Exception>(() => Factorial(-1));
 
             Assert.That(Factorial(5), Is.EqualTo(120));
-            Assert.That(ex.Message, Is.EqualTo("Число меньше 0"));
+            Assert.That(ex.Message, Is.EqualTo("A number less than zero"));
         }
 
         [Test]
@@ -77,7 +77,7 @@ namespace Test
             Exception ex = Assert.Throws<Exception>(() => Fibonacci(-1));
 
             Assert.That(Fibonacci(7), Is.EqualTo(13));
-            Assert.That(ex.Message, Is.EqualTo("Число меньше 0"));
+            Assert.That(ex.Message, Is.EqualTo("A number less than zero"));
         }
 
         [Test]
@@ -86,8 +86,8 @@ namespace Test
             Exception ex1 = Assert.Throws<Exception>(() => Exponentiation(-0.1, 0.1));
             Exception ex2 = Assert.Throws<Exception>(() => Exponentiation(0.0, -0.1));
 
-            Assert.That(ex1.Message, Is.EqualTo("Так нельзя"));
-            Assert.That(ex2.Message, Is.EqualTo("Так нельзя"));
+            Assert.That(ex1.Message, Is.EqualTo("You can't do that"));
+            Assert.That(ex2.Message, Is.EqualTo("You can't do that"));
 
             Assert.That(Exponentiation(1.1, 1.1), Is.EqualTo(1.1105342410545758));
         }

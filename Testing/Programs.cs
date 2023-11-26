@@ -36,7 +36,7 @@
 
         public int Factorial(int n)
         {
-            if (n < 0) throw new Exception("Число меньше 0");
+            if (n < 0) throw new Exception("A number less than zero");
 
             int factorial = 1;
 
@@ -47,7 +47,7 @@
 
         public int Fibonacci(int n)
         {
-            if (n < 0) throw new Exception("Число меньше 0");
+            if (n < 0) throw new Exception("A number less than zero");
 
             if (n == 1) return 1;
             else if (n == 0) return 0;
@@ -57,7 +57,7 @@
 
         public double ExponentiationRealNumber(double a, double b) 
         {
-            if (a <= 0) throw new Exception("Так нельзя");
+            if (a <= 0) throw new Exception("You can't do that");
 
             return Math.Pow(a, b); 
         }
