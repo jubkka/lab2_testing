@@ -47,9 +47,9 @@ namespace Test
             string str1 = string.Empty;
             string str2 = "1";
 
-            string str3 = "000";
-            string str4 = "010";
-            string str5 = "100";
+            string str3 = "111";
+            string str4 = "020";
+            string str5 = "001";
 
             string[] tests = { str1, str2, str3, str4, str5 };
 
