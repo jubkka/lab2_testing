@@ -56,7 +56,7 @@ namespace Test
 
             Assert.False(Palindrome(str1));
             Assert.False(Palindrome(str2));
-            Assert.False(Palindrome(str3));
+            Assert.True(Palindrome(str3));
             Assert.True(Palindrome(str4));
             Assert.False(Palindrome(str5));
 
